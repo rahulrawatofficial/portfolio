@@ -529,10 +529,13 @@ main {
   max-width: 46rem;
 }
 
-.education-line {
+.education {
   margin-top: 2rem;
+}
+
+.education-line {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
   font-size: 0.85rem;
   color: var(--md-sys-color-on-surface-variant);
@@ -541,22 +544,27 @@ main {
 .education-line .material-symbols-rounded {
   color: var(--md-sys-color-primary);
   font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
 }
 
-.education-line a {
+.education-resume-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--md-sys-color-primary);
-  font-weight: 500;
   text-decoration: none;
 }
 
-.education-line a:hover {
-  text-decoration: underline;
+.education-resume-link .material-symbols-rounded {
+  font-size: 1.1rem;
 }
 
-@media (max-width: 640px) {
-  .education-line {
-    flex-wrap: wrap;
-  }
+.education-resume-link:hover {
+  text-decoration: underline;
 }
 
 /* Skills */
