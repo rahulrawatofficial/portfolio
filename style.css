@@ -550,10 +550,6 @@ main {
   font-size: 1.2rem;
 }
 
-.education__resume {
-  margin-top: 1.5rem;
-}
-
 .education-list {
   list-style: none;
   display: flex;
